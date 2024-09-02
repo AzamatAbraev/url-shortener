@@ -1,0 +1,154 @@
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background: #fff;
+  z-index: 10;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-menu-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-menu a {
+  color: #9e9aa8;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.5s ease;
+}
+
+.nav-menu a:hover {
+  color: #34313d;
+}
+
+.nav-menu-toggle a:hover {
+  transition: 0.5s ease;
+  opacity: 0.4
+}
+
+.nav-menu-toggle a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.nav-buttons-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+
+
+
+.login-btn,
+.login-btn-toggle {
+  color: #9e9aa8;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  background: transparent;
+}
+
+.register-btn,
+.register-btn-toggle {
+  border-radius: 28px;
+  background: #2bd0d0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 8px 24px;
+  border: none;
+  transition: 0.5s ease;
+}
+
+.register-btn:hover, .register-btn-toggle:hover {
+  opacity: 0.4;
+}
+
+.toggle-btn {
+  border: none;
+  background: none;
+  display: none;
+  margin-top: 10px;
+}
+
+.nav-toggle {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  left: 20px;
+  border-radius: 10px;
+  background: #3a3054;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 24px;
+  gap: 30px;
+  display: none;
+  /* transition: 1s ease; */
+}
+
+.line {
+  width: 100%;
+  opacity: 0.25;
+  background: #9e9aa8;
+  height: 1px;
+}
+
+@media (max-width: 750px) {
+  .nav-right {
+    gap: 27px;
+  }
+  .nav-left {
+    gap: 35px;
+  }
+  .nav-menu {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .toggle-btn {
+    display: block;
+  }
+
+  .nav-menu,
+  .login-btn,
+  .register-btn {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+}
